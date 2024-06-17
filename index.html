@@ -4,20 +4,23 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Octo</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<title>Octo</title>
 </head>
 <body>
 	<header class="header">
 		<h1 class="title">Solutions for people like you</h1>
 	</header>
 	<section class="section-items">
-		<div class="container">
+		<div class="container section-items__container">
 			<div class="section-items__item">
 				<div class="section-items__category">
 					<p class="section-items__p-category">Category | Marketing</p>
 				</div>
-				<div class="section-items__img-container"></div>
+				<div class="section-items__img"></div>
 				<div class="section-items__text">
 					<p class="section-items__author">Adam Sandler</p>
 					<h2 class="section-items__h2">Solutions for people like you like people</h2>
@@ -29,9 +32,7 @@
 				<div class="section-items__category">
 					<p class="section-items__p-category">Category</p>
 				</div>
-				<div class="section-items__img-container">
-					<img class="section-items__img" src="images/flowers.jpg" alt="flowers">
-				</div>
+				<img class="section-items__img img-flowers" src="images/flowers.jpg" alt="flowers">
 				<div class="section-items__text">
 					<p class="section-items__author">Adam Sandler</p>
 					<h2 class="section-items__h2">Solutions for people like you like people</h2>
@@ -40,36 +41,34 @@
 				</div>
 			</div>
 			<div class="section-items__item">
-				<div class="section-items__category">
+				<div class="section-items__category dark-blue-bg">
 					<p class="section-items__p-category">Category | Development</p>
 				</div>
-				<div class="section-items__img-container"></div>
+				<div class="section-items__img pink-bg"></div>
 				<div class="section-items__text">
-					<p class="section-items__author">Adam Sandler</p>
+					<p class="section-items__author dark-blue-color">Adam Sandler</p>
 					<h2 class="section-items__h2">Solutions for people like</h2>
 					<p class="section-items__p">How can we help your technology and services business develop a revenue engine based</p>
-					<button class="section-items__button">Call to action</button>
+					<button class="section-items__button dark-blue-button">Call to action</button>
 				</div>
 			</div>
 			<div class="section-items__item">
-				<div class="section-items__category">
+				<div class="section-items__category dark-blue-bg">
 					<p class="section-items__p-category">Category | Marketing</p>
 				</div>
-				<div class="section-items__img-container"></div>
+				<div class="section-items__img blue-bg"></div>
 				<div class="section-items__text">
-					<p class="section-items__author">Adam Sandler</p>
+					<p class="section-items__author dark-blue-color">Adam Sandler</p>
 					<h2 class="section-items__h2">Solutions for people like you like people</h2>
 					<p class="section-items__p">How can we help your technology and services business develop a revenue engine based</p>
-					<button class="section-items__button">Call to action</button>
+					<button class="section-items__button dark-blue-button">Call to action</button>
 				</div>
 			</div>
 			<div class="section-items__item">
 				<div class="section-items__category">
 					<p class="section-items__p-category">Category | Marketing</p>
 				</div>
-				<div class="section-items__img-container">
-					<img class="section-items__img" src="images/lenses.jpg" alt="lenses">
-				</div>
+				<img class="section-items__img" src="images/lenses.jpg" alt="lenses">
 				<div class="section-items__text">
 					<p class="section-items__author">Adam Sandler</p>
 					<h2 class="section-items__h2">Solutions for people like</h2>
@@ -78,77 +77,79 @@
 				</div>
 			</div>
 			<div class="section-items__item">
-				<div class="section-items__category">
+				<div class="section-items__category dark-blue-bg">
 					<p class="section-items__p-category">Category</p>
 				</div>
-				<div class="section-items__img-container"></div>
+				<div class="section-items__img"></div>
 				<div class="section-items__text">
-					<p class="section-items__author">Adam Sandler</p>
+					<p class="section-items__author dark-blue-color">Adam Sandler</p>
 					<h2 class="section-items__h2">Solutions for people like you like people</h2>
 					<p class="section-items__p">How can we help your technology and services business develop a revenue engine based</p>
-					<button class="section-items__button">Call to action</button>
+					<button class="section-items__button dark-blue-button">Call to action</button>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section class="section-call">
-		<div class="container">
+		<div class="container section-call__container">
 			<div class="section-call__text">
 				<h1 class="section-call__h1">Solutions for people like you</h1>
 				<p class="section-call__p">How can we help your technology and services business develop a revenue engine based on Hubspot?</p>
 				<div class="section-call__buttons">
-					<button class="section-call__button--blue">Call to action</button>
-					<button class="section-call__button--black">Call to action</button>
+					<button class="section-call__button section-call__button--blue">Call to action</button>
+					<button class="section-call__button section-call__button--black">Call to action</button>
 				</div>
 			</div>
-			<div class="section-call__img-container">
-				<img class="section-call__img" src="images/lenses.jpg" alt="lenses">
-			</div>
+			<img class="section-call__img" src="images/lenses.jpg" alt="lenses">
 		</div>
 	</section>
 	<section class="section-slider">
-		<div class="container">
-			<div class="section-slider__item">
-				<div class="section-slider__category">
-					<p class="section-slider__p-category">Category | Marketing</p>
+		<div class="container section-slider__container">
+			<div class="section-slider__items">
+				<div class="section-slider__item">
+					<div class="section-slider__category">
+						<p class="section-slider__p-category">Category | Marketing</p>
+					</div>
+					<div class="section-items__img"></div>
+					<div class="section-slider__text">
+						<p class="section-slider__author">Adam Sandler</p>
+						<h2 class="section-slider__h2">Solutions for people like you like people</h2>
+						<p class="section-slider__p">How can we help your technology and services business develop a revenue engine based</p>
+						<button class="section-slider__button">Call to action</button>
+					</div>
 				</div>
-				<div class="section-slider__img-container"></div>
-				<div class="section-slider__text">
-					<p class="section-slider__author">Adam Sandler</p>
-					<h2 class="section-slider__h2">Solutions for people like you like people</h2>
-					<p class="section-slider__p">How can we help your technology and services business develop a revenue engine based</p>
-					<button class="section-slider__button">Call to action</button>
-				</div>
-			</div>
-			<div class="section-slider__item">
-				<div class="section-slider__category">
-					<p class="section-slider__p-category">Category</p>
-				</div>
-				<div class="section-slider__img-container">
+				<div class="section-slider__item">
+					<div class="section-slider__category">
+						<p class="section-slider__p-category">Category</p>
+					</div>
 					<img class="section-slider__img" src="images/flowers.jpg" alt="flowers">
+					<div class="section-slider__text">
+						<p class="section-slider__author">Adam Sandler</p>
+						<h2 class="section-slider__h2">Solutions for people like you like people</h2>
+						<p class="section-slider__p">How can we help your technology and services business develop a revenue engine based</p>
+						<button class="section-slider__button">Call to action</button>
+					</div>
 				</div>
-				<div class="section-slider__text">
-					<p class="section-slider__author">Adam Sandler</p>
-					<h2 class="section-slider__h2">Solutions for people like you like people</h2>
-					<p class="section-slider__p">How can we help your technology and services business develop a revenue engine based</p>
-					<button class="section-slider__button">Call to action</button>
-				</div>
-			</div>
-			<div class="section-slider__item">
-				<div class="section-slider__category">
-					<p class="section-slider__p-category">Category | Marketing</p>
-				</div>
-				<div class="section-slider__img-container"></div>
-				<div class="section-slider__text">
-					<p class="section-slider__author">Adam Sandler</p>
-					<h2 class="section-slider__h2">Solutions for people like</h2>
-					<p class="section-slider__p">How can we help your technology and services business develop a revenue engine based</p>
-					<button class="section-slider__button">Call to action</button>
+				<div class="section-slider__item">
+					<div class="section-slider__category dark-blue-bg">
+						<p class="section-slider__p-category">Category | Marketing</p>
+					</div>
+					<div class="section-items__img pink-bg"></div>
+					<div class="section-slider__text">
+						<p class="section-slider__author dark-blue-color">Adam Sandler</p>
+						<h2 class="section-slider__h2">Solutions for people like</h2>
+						<p class="section-slider__p">How can we help your technology and services business develop a revenue engine based</p>
+						<button class="section-slider__button dark-blue-button">Call to action</button>
+					</div>
 				</div>
 			</div>
 			<div class="section-slider__buttons">
-				<img src="images/arrow-left.svg" alt="arrow" class="section-slider__arrow--left">
-				<img src="images/arrow-left.svg" alt="arrow" class="section-slider__arrow--right">
+				<button class="section-slider__button-arrow">
+					<img src="images/arrow-left.svg" alt="arrow" class="section-slider__arrow section-slider__arrow--left">
+				</button>
+				<button class="section-slider__button-arrow">
+					<img src="images/arrow-left.svg" alt="arrow" class="section-slider__arrow section-slider__arrow--right">
+				</button>
 			</div>
 		</div>
 	</section>

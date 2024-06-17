@@ -1,0 +1,277 @@
+html {
+  box-sizing: border-box;
+  font-size: calc(100vw / 1920 * 10);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: var(--black-color);
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+:root {
+  --dark-blue-color: #081580;
+  --black-color: #010101;
+  --blue-color: #00b6dd;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/flowers.jpg);
+  height: 39.6rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 1, 1, 0.6);
+  z-index: 0;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 6.2rem;
+  line-height: 110%;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-align: center;
+  width: 75rem;
+  z-index: 1;
+}
+
+.section-items,
+.section-slider,
+.section-call {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.container {
+  display: grid;
+  width: 114rem;
+}
+
+.section-items__container,
+.section-slider__items {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.section-items__item,
+.section-slider__item {
+  position: relative;
+  width: 36rem;
+  height: 50rem;
+  padding: 3rem;
+  border: 1px solid #d3d8e4;
+}
+
+.section-items__category,
+.section-slider__category {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue-color);
+  height: 3.6rem;
+  padding: 0 1.5rem 0 1.6rem;
+  top: 1.2rem;
+  left: 0;
+}
+
+.dark-blue-bg {
+  background-color: var(--dark-blue-color);
+}
+
+.section-items__p-category,
+.section-slider__p-category {
+  font-size: 1.3rem;
+  line-height: 169%;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.section-items__text,
+.section-slider__text {
+  margin-top: 2rem;
+}
+
+.section-items__author,
+.section-slider__author {
+  font-size: 1.3rem;
+  line-height: 154%;
+  letter-spacing: 0.06em;
+  color: var(--blue-color);
+}
+
+.dark-blue-color {
+  color: var(--dark-blue-color);
+}
+
+.section-items__h2,
+.section-slider__h2 {
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 136%;
+  letter-spacing: 0.05em;
+  margin-top: 6px;
+}
+
+.section-items__p,
+.section-slider__p {
+  font-size: 1.6rem;
+  line-height: 162%;
+  letter-spacing: 0.05em;
+  margin-top: 1.6rem;
+}
+
+.section-items__button,
+.section-call__button,
+.section-slider__button {
+  border: 2px solid var(--blue-color);
+  width: 16rem;
+  height: 4rem;
+  background: var(--blue-color);
+  font-size: 1.3rem;
+  line-height: 154%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #fff;
+}
+
+.dark-blue-button {
+  border: 2px solid var(--dark-blue-color);
+  background-color: var(--dark-blue-color);
+}
+
+.section-items__button,
+.section-slider__button {
+  position: absolute;
+  bottom: 3rem;
+}
+
+.section-items__img,
+.section-slider__img {
+  width: 30rem;
+  height: 17rem;
+  background: #d3d8e4;
+  object-fit: cover;
+}
+
+.pink-bg {
+  background: #ff779a;
+}
+
+.blue-bg {
+  background: var(--blue-color);
+}
+
+.section-items__img {
+  object-position: left top;
+}
+
+.img-flowers {
+  object-position: center;
+}
+
+.section-call {
+  background-color: var(--black-color);
+  padding: 10rem 0;
+}
+
+.section-call__container {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: end;
+}
+
+.section-call__h1 {
+  font-weight: 700;
+  font-size: 6.2rem;
+  line-height: 110%;
+  letter-spacing: 0.02em;
+  color: var(--blue-color);
+}
+
+.section-call__p {
+  font-size: 2.2rem;
+  line-height: 136%;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin-top: 2.2rem;
+}
+
+.section-call__buttons {
+  margin-top: 4rem;
+}
+
+.section-call__button--black {
+  background: none;
+  margin-left: 16px;
+}
+
+.section-call__img {
+  width: 45.8rem;
+  height: 38rem;
+  object-fit: cover;
+  object-position: left;
+}
+
+.section-slider {
+  margin-bottom: 10rem;
+}
+
+.section-slider__items {
+  display: grid;
+}
+
+.section-slider__buttons {
+  margin-top: 4rem;
+}
+
+.section-slider__button-arrow {
+  background-color: transparent;
+  border-width: 0;
+}
+
+.section-slider__button-arrow:last-child {
+  margin-left: 1.3rem;
+}
+
+.section-slider__arrow--right {
+  transform: scaleX(-1);
+}
