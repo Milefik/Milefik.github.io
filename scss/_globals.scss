@@ -1,0 +1,19 @@
+body {
+	margin: 0;
+	font-family: "Noto Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+	color: var(--black-color);
+}
+
+h1,
+h2,
+p {
+	margin: 0;
+}
+
+button {
+	cursor: pointer;
+}
